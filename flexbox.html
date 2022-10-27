@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .pai{
+            background-color: red;
+            height: 400px;
+            display: flex; /* Assume como vai ser o comportamente
+            das tags filhas */
+
+            /* Propriedades funciona apenas no FLEX */
+            flex-direction: row; /* Deixar suas box filhas na horizontal */
+            justify-content: space-around; /* Deixa suas box filhas alinhadas
+            horizontalmente */
+            align-items: center; /* Deixa suas box filhas alinhadas
+            verticalmente  */
+            flex-wrap: wrap;
+        }
+
+        .filha{
+            background-color: blue;
+            height: 150px;
+            width: 50%;
+            /* margin: 20px; */
+        }
+
+        .filha.bastiana{
+            background-color: blueviolet;
+        }
+    </style>
+
+</head>
+<body>
+    <section class="pai">
+        <section class="filha bastiana"></section>
+        <section class="filha fran"></section>
+        <section class="filha xuxa"></section>
+    </section>
+    
+</body>
+</html>
