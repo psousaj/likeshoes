@@ -1,9 +1,16 @@
 body {
     font-family: 'Inter', 'sans-serif';
+    --color-orange: #F45C04;
 }
 
-.txt-orange{
-    color: orangered;
+.txt-orange {
+    color: var(--color-orange);
+    font-weight: bold;
+} h1 {
+    font-size: 44px;
+    margin: 0;
+    padding: 0;
+} h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 }
@@ -12,8 +19,6 @@ body {
     max-width: 1200px; /*Largura */
     margin: 0px auto; /*opx para cima e automatica nas laterais*/
     padding: 0px;
-    justify-content: center;
-    align-items: center;
 }
 
 .flex{
@@ -127,4 +132,58 @@ footer .container .flex{
     justify-content: space-between;
     flex-direction: row;
     top: 50%;
+}
+
+/* Produtos Style */
+
+.title {
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.small {
+    font-size: 18px;
+    margin: 7px 0;
+}
+
+.button {
+    background-color: var(--color-orange);
+    color: #FFF;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    -ms-text-size-adjust: auto;
+    margin: 55px 0 10px 0;
+}
+
+.area-produto {
+    margin: 90px 0 50px 0;
+} .text-area {
+    margin: 55px 30px;
+} #pricing {
+    margin: 55px 0 0 0;
+}
+
+.img-container {
+    max-width: 500px;
+    
+} .img-container img {
+    border: 3px solid grey; 
+    margin: 1px;
+} #big-image {
+    margin: 0px;
+}
+
+.avaliation {
+    padding: 50px 90px;
+    margin: 0 0 150px 0;
+    background-color: #EEE;
+} .avaliation-text{
+    margin: 0 0 25px 25px;
+    line-height: 1.5;
+} .avaliation h2 {
+    font-size: 32px;
+    margin: 0 0 30px 0;
 }
